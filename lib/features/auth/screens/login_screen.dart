@@ -206,11 +206,15 @@ class _LoginScreenState extends State<LoginScreen> {
                                 final password = passwordController.text.trim();
 
                                 if (email.isEmpty || password.isEmpty) {
-                                  ScaffoldMessenger.of(context).showSnackBar(
-                                    const SnackBar(
-                                      content: Text("Enter all fields"),
-                                    ),
+                                  showAnimatedToast(
+                                    context,
+                                    message: "Enter all fields",
                                   );
+                                  // ScaffoldMessenger.of(context).showSnackBar(
+                                  //   const SnackBar(
+                                  //     content: Text("Enter all fields"),
+                                  //   ),
+                                  // );
                                   return;
                                 }
 
