@@ -49,18 +49,6 @@ A compact and modern e-commerce application built using Flutter, demonstrating c
 
 ---
 
-## 🏗️ Architecture
-
-Clean Architecture with layered separation:
-lib/
-├── core/
-├── features/
-│ ├── auth/
-│ ├── catalog/
-│ ├── cart/
-│ ├── favorites/
-
-
 
 ### Layers:
 - **Presentation** → UI + Bloc
@@ -105,7 +93,7 @@ Why BLoC?
 - Last successful API response stored
 - TTL (can be extended)
 
-### Testng 
+### Testing 
  - https://drive.google.com/drive/folders/1VrKyZ5yaNWiK2xSDxmGMUEl_7BLG0E1G?usp=sharing
  - Follow above link for testing records
 

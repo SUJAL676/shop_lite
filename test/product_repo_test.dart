@@ -11,8 +11,6 @@ class FakeProductApiService extends ProductApiService {
   FakeProductApiService() : super(Dio());
 
   Future<List<ProductModel>> fetchProducts(int limit, int skip) async {
-    print("✅ FAKE API CALLED");
-
     return [
       ProductModel(
         id: 1,

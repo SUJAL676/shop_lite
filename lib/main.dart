@@ -13,7 +13,6 @@ import 'package:shop_lite/features/catalog/data/product_respository.dart';
 import 'package:shop_lite/features/favorites/bloc/favorites_bloc.dart';
 import 'package:shop_lite/features/splash/bloc/splash_bloc.dart';
 import 'package:shop_lite/features/splash/screens/splash_screen.dart';
-import 'package:flutter_test/flutter_test.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

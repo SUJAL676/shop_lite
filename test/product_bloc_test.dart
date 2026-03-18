@@ -7,6 +7,7 @@ import 'package:shop_lite/features/catalog/data/product_model.dart';
 import 'package:shop_lite/features/catalog/data/product_respository.dart';
 
 class FakeProductRepository implements ProductRepository {
+  @override
   Future<List<ProductModel>> getProducts(int limit, int skip) async {
     return [
       ProductModel(
@@ -21,10 +22,12 @@ class FakeProductRepository implements ProductRepository {
     ];
   }
 
+  @override
   Future<List<String>> getCategories() async {
     return ["beauty", "fragrance"];
   }
 
+  @override
   Future<List<ProductModel>> getProductsByCategory(String category) async {
     return [
       ProductModel(
@@ -39,6 +42,7 @@ class FakeProductRepository implements ProductRepository {
     ];
   }
 
+  @override
   Future<List<ProductModel>> searchProducts(String query) async {
     return [
       ProductModel(
@@ -54,11 +58,9 @@ class FakeProductRepository implements ProductRepository {
   }
 
   @override
-  // TODO: implement api
   ProductApiService get api => throw UnimplementedError();
 
   @override
-  // TODO: implement box
   Box<dynamic> get box => throw UnimplementedError();
 }
 
